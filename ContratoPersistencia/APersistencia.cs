@@ -1,5 +1,4 @@
 ﻿namespace ContratoPersistencia;
-
 public abstract class APersistencia
 {
     public abstract void Incluir(IEntidade entidade);

@@ -1,4 +1,6 @@
-﻿namespace app.Models;
+﻿using ContratoPersistencia;
+
+namespace app.Models;
 public class Cliente : IEntidade
     {
         public Cliente()

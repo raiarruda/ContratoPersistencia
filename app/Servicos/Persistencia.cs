@@ -1,5 +1,8 @@
 ﻿
 
+using app.Models;
+using ContratoPersistencia;
+
 namespace app.Servicos;
  public class Persistencia
     {
