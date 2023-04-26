@@ -8,6 +8,6 @@ public abstract class APersistencia
 
     public string QuemEVoce()
     {
-        return "Eu sou uma abistração e tenho mais poderes do que a interface";
+        return "Eu sou uma abstração e tenho mais poderes do que a interface";
     }
 }

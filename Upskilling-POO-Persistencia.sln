@@ -1,14 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app", "app\app.csproj", "{A06262F8-8F85-49D7-B8F0-8F118F52340E}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "app", "app\app.csproj", "{A06262F8-8F85-49D7-B8F0-8F118F52340E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContratoPersistencia", "ContratoPersistencia\ContratoPersistencia.csproj", "{3F2C0E38-8C23-4AFD-8A57-C6BB8D0567A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContratoPersistencia", "ContratoPersistencia\ContratoPersistencia.csproj", "{3F2C0E38-8C23-4AFD-8A57-C6BB8D0567A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonPersistencia", "JsonPersistencia\JsonPersistencia.csproj", "{2DEC06D2-B68E-4323-9837-FA5D70AAD324}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonPersistencia", "JsonPersistencia\JsonPersistencia.csproj", "{2DEC06D2-B68E-4323-9837-FA5D70AAD324}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvPersistencia", "CsvPersistencia\CsvPersistencia.csproj", "{106A7161-BBF9-43AA-92FE-113FAB75280B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsvPersistencia", "CsvPersistencia\CsvPersistencia.csproj", "{106A7161-BBF9-43AA-92FE-113FAB75280B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgresPersistencia", "PostgresPersistencia\PostgresPersistencia.csproj", "{9E49E46B-070F-43CD-A42B-DFC834799769}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgresPersistencia", "PostgresPersistencia\PostgresPersistencia.csproj", "{9E49E46B-070F-43CD-A42B-DFC834799769}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDBPersistencia", "MongoDBPersistencia\MongoDBPersistencia.csproj", "{D563AD28-C8B6-48DE-9E2A-E5B1FC0D4C70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +41,12 @@ Global
 		{9E49E46B-070F-43CD-A42B-DFC834799769}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E49E46B-070F-43CD-A42B-DFC834799769}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E49E46B-070F-43CD-A42B-DFC834799769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D563AD28-C8B6-48DE-9E2A-E5B1FC0D4C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D563AD28-C8B6-48DE-9E2A-E5B1FC0D4C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D563AD28-C8B6-48DE-9E2A-E5B1FC0D4C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D563AD28-C8B6-48DE-9E2A-E5B1FC0D4C70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
