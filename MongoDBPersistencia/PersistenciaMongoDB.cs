@@ -1,4 +1,6 @@
 ﻿using ContratoPersistencia;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 
 namespace MongoDBPersistencia
@@ -7,13 +9,15 @@ namespace MongoDBPersistencia
     {
         private string stringConexao;
         private readonly IMongoCollection<IEntidade> collection;
-
-        public PersistenciaMongoDB(string _conexao, string nomeBanco, string nomeColecao)
+        private readonly string _conexao = "mongodb+srv://raissa:WILEurPPDnrDWEJF@cluster0.lxkzp.mongodb.net/?retryWrites=true&w=majority";
+        private readonly string _nomeBanco =  "cliente_persistencia";
+        public PersistenciaMongoDB( string nomeColecao)
         {
             stringConexao = _conexao;
             var client = new MongoClient(_conexao);
-            var database = client.GetDatabase(nomeBanco);
+            var database = client.GetDatabase(_nomeBanco);
             collection = database.GetCollection<IEntidade>(nomeColecao);
+           
         }
 
         public override void Apagar(IEntidade entidade)
@@ -37,6 +41,8 @@ namespace MongoDBPersistencia
 
         public override void Incluir(IEntidade entidade)
         {
+            BsonSerializer.RegisterSerializer(entidade.GetType(), new BsonCustumSerializer<IEntidade>());
+
             collection.InsertOne(entidade);
 
         }
